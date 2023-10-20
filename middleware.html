@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <link rel="icon" type="image/png"  href="img/laravel.ico">
+  <meta charset="utf-8">
+  <title>Laravel</title>
+
+  <style>
+    /* положение пустой фотки для наведения курсора */
+    #app {
+      position: absolute;
+      left: 320px;
+      top: 80px
+    }
+
+
+/*   едет машина с лево на право */
+@keyframes slidein {
+  from {
+    margin-top: 35%;
+  }
+  to {
+    margin-top: 10%;
+  }
+}
+#avto {
+  position: absolute;
+  margin-top: 10%;
+  animation-duration: 3s;
+  animation-name: slidein;
+  margin-left: 13%;
+}
+
+/*   фоновый рисунок с ссылками */
+#fon {
+  position: absolute;
+  display: inline-block;
+}
+#fon a {
+  position: absolute;
+}
+#fon a:nth-of-type(1) {
+  left: 205px;
+  top: 0px;
+  width: 60px;
+  height: 30px;
+}
+#fon a:nth-of-type(2) {
+  left: 205px;
+  top: 640px;
+  width: 60px;
+  height: 30px;
+}
+#fon a:hover {
+  background: rgba(255,255,255,.3);
+}
+</style>
+
+</head>
+
+<body>
+  <span id="fon">
+    <img src="img/middleware.jpg"   alt="lorem"><br>
+    <a href="config.html" title="Вперед"></a>
+    <a href="bootstrap.html" title="Назад"></a>
+  </span>
+
+  <img id="avto" src="img/avto-v.png" title="GET — метод для чтения данных с сайта." ><br>
+
+  <img id="app" src="img/hidden.png"
+  onMouseOver="this.src='img/kernel.jpg';"
+  onMouseOut="this.src='img/hidden.png';">
+
+
+
+</body>
+</html>
